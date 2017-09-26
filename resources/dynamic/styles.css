@@ -25,11 +25,11 @@ Dim radio_checkbox_size = CurrentADP.Var("radio_checkbox_size")
 %}
 
 ::selection {
-    color: rgba({%= WhiteColor %});
+    color: rgba({%= NeutralLightColor %});
     background-color: rgba({%= PrimaryColor %});
 }
 ::-moz-selection {
-    color: rgba({%= WhiteColor %});
+    color: rgba({%= NeutralLightColor %});
     background-color: rgba({%= PrimaryColor %});
 }
 body, html {
@@ -76,7 +76,7 @@ header.large, .askiaquestions, input[type=text], input[type=number], textarea {
 
 .progress {
     height: calc({%= SmallFS %} + .05em);
-    border-bottom: 1px solid rgba({%= NeutralLightColor.ToRGB() %},0.5);
+    border-bottom: 1px solid rgba({%= BlackColor.ToRGB() %},.1);
 }
 
 .progress-bar {
