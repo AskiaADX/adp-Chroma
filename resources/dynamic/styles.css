@@ -166,7 +166,7 @@ header.large, .askiaquestions, input[type=text], input[type=number], textarea {
 }
 .primary:hover {
     background-color: rgba({%= PrimaryDarkColor %});
-    color: rgba({%= WhiteColor %});
+    color: rgba({%= NeutralLightColor %});
 }
 .back label:after {
     background: rgba({%= NeutralColor %});
