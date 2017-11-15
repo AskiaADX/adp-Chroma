@@ -82,7 +82,7 @@ header.large, .askiaquestions, input[type=text], input[type=number], textarea {
 .progress-bar {
     background-color: rgba({%= SecondaryColor %});
     border-radius: none;
-    width: {%= Interview.Progress %}%;
+    width: {%= Interview.Progress.ToString().Replace(",",".") %}%;
 }
 .progress-value {
     font-size: {%= SmallFS %};
