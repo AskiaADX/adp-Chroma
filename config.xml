@@ -9,7 +9,8 @@
     <guid>bf60d191-f1af-4ea7-bb65-08cfa86d87d9</guid>
     <version>1.0.5</version>
     <date>2017-02-28</date>
-    <description><![CDATA[adp Chroma]]></description>
+    <description><![CDATA[adp Chroma
+		v1.0.6 - Modified dynamic/style.css for HTML5 compatibility]]></description>
     <company>askia</company>
     <author><![CDATA[Jerome Duparc <jeromed@askia.com> Paul McDuffee Nevin<paul@askia.com>]]></author>
     <site>https://www.askia.com/</site>
