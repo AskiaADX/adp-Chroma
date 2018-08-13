@@ -35,7 +35,7 @@
         <description><![CDATA[Title of the window]]></description>
         <value><![CDATA[Askia Web Survey]]></value>
       </property>
-      <property xsi:type="standardProperty" id="survey_logo_src" name="Survey Logo Src" type="string" require="false" visible="true">
+      <property xsi:type="standardProperty" id="survey_logo_src" name="Logo path" type="string" require="false" visible="true">
         <description><![CDATA[The logo of the survey which will be display next to the survey name]]></description>
         <value></value>
       </property>
