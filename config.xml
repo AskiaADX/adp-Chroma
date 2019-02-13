@@ -10,7 +10,10 @@
     <version>1.0.5</version>
     <date>2017-02-28</date>
     <description><![CDATA[adp Chroma
-		v1.0.6 - Modified dynamic/style.css for HTML5 compatibility]]></description>
+		v1.0.6 - Modified dynamic/style.css for HTML5 compatibility
+    v1.0.7 - Modified dynamic/style.css for HTML5 compatibility.
+             Added properties for additional HTML in Head and Foot sections
+             Strip HTML from longcaptions in error messages]]></description>
     <company>askia</company>
     <author><![CDATA[Jerome Duparc <jeromed@askia.com> Paul McDuffee Nevin<paul@askia.com>]]></author>
     <site>https://www.askia.com/</site>
@@ -62,6 +65,14 @@
       <property xsi:type="standardProperty" id="radio_checkbox_size" name="Radio Checkbox size" type="string" mode="dynamic" require="true" visible="true">
         <description><![CDATA[Radio Checkbox size]]></description>
         <value><![CDATA[1.5rem]]></value>
+      </property>
+      <property xsi:type="standardProperty" id="headHTML" name="Additional HTML for Head section" type="string" mode="dynamic" require="false" visible="true">
+        <description><![CDATA[Additional HTML for Head section]]></description>
+        <value></value>
+      </property>
+      <property xsi:type="standardProperty" id="footHTML" name="Additional HTML for Foot section" type="string" mode="dynamic" require="false" visible="true">
+        <description><![CDATA[Additional HTML for Foot section]]></description>
+        <value></value>
       </property>
     </category>
     <category id="buttons" name="Buttons">
