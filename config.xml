@@ -7,13 +7,14 @@
   <info>
     <name>Chroma</name>
     <guid>bf60d191-f1af-4ea7-bb65-08cfa86d87d9</guid>
-    <version>1.0.7</version>
+    <version>1.0.8</version>
     <date>2017-02-28</date>
     <description><![CDATA[adp Chroma
 		v1.0.6 - Modified dynamic/style.css for HTML5 compatibility
-    v1.0.7 - Modified dynamic/style.css for HTML5 compatibility.
+    	v1.0.7 - Modified dynamic/style.css for HTML5 compatibility.
              Added properties for additional HTML in Head and Foot sections
-             Strip HTML from longcaptions in error messages]]></description>
+             Strip HTML from longcaptions in error messages
+		v1.0.8 - Added display next property]]></description>
     <company>askia</company>
     <author><![CDATA[Jerome Duparc <jeromed@askia.com> Paul McDuffee Nevin<paul@askia.com>]]></author>
     <site>https://www.askia.com/</site>
@@ -78,6 +79,14 @@
     <category id="buttons" name="Buttons">
       <property xsi:type="standardProperty" id="display_previous" name="Display previous" type="string" require="true" visible="true">
         <description><![CDATA[Display previous button]]></description>
+        <value><![CDATA[yes]]></value>
+        <options>
+          <option value="yes" text="Yes" />
+          <option value="no" text="No" />
+        </options>
+      </property>
+      <property xsi:type="standardProperty" id="display_next" name="Display next" type="string" require="true" visible="true">
+        <description><![CDATA[Display next button]]></description>
         <value><![CDATA[yes]]></value>
         <options>
           <option value="yes" text="Yes" />
