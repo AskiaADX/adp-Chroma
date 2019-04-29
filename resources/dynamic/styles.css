@@ -147,6 +147,22 @@ input[name="Next"] {
     padding: 5px;
     cursor: pointer;
 }
+
+.askia-radio, .askia-checkbox {
+   float: left;
+}
+
+.askia-grid-row > td >.askia-radio, .askia-grid-row > td > .askia-checkbox, .askiarow > td >.askia-radio, .askiarow > td > .askia-checkbox {
+  float: none;
+}
+
+.askia-radio + .askia-response-label, .askia-checkbox + .askia-response-label {
+    display: block;
+    margin-left: {%= radio_checkbox_size %} !important;
+    padding-left: 10px;
+    vertical-align: text-top;
+}
+
 {% If (Browser.Mobile = False) Then %}
 .askia-response:hover {
     background-color : rgba({%= BlackColor.ToRGB() %}, .1); 
