@@ -72,11 +72,6 @@ header.large, .askiaquestions, input[type=text], input[type=number], textarea {
 
 .progressWrapper {
     padding: 0;
-} 
-
-.progress {
-    height: calc({%= SmallFS %} + .05em);
-    border-bottom: 1px solid rgba({%= BlackColor.ToRGB() %},.1);
 }
 
 .progress-bar {
@@ -87,7 +82,7 @@ header.large, .askiaquestions, input[type=text], input[type=number], textarea {
 .progress-value {
     font-size: {%= SmallFS %};
 }
-.askiaquestions {  
+.askiaquestions {
     border-radius: {%= BorderRadius %};
     padding: {%= VPadding %} {%= HPadding %};
     margin: 0 auto {%= VPadding %} auto;
@@ -136,7 +131,7 @@ input[name="Next"] {
     border: {%= BorderWidth %} solid rgba({%= ErrorColor %});
     border-radius: {%= BorderRadius %};
     color: #FFF;
-    padding: {%= VPadding %} {%= HPadding %};
+    padding: calc({%= VPadding %} / 2) calc({%= HPadding %} / 2);
 }
 
 .askia-caption {
@@ -165,12 +160,12 @@ input[name="Next"] {
 
 {% If (Browser.Mobile = False) Then %}
 .askia-response:hover {
-    background-color : rgba({%= BlackColor.ToRGB() %}, .1); 
+    background-color : rgba({%= BlackColor.ToRGB() %}, .1);
     cursor: pointer;
 }
 {% EndIf %}
 .askia-grid-header .askia-response:hover {
-    background-color : transparent; 
+    background-color : transparent;
 }
 .btn {
     font-family: {%= FontFamily %};
