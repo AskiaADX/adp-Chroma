@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<page  xmlns="http://www.askia.com/2.1.0/ADPSchema"
+<page  xmlns="http://www.askia.com/2.2.0/ADPSchema"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://www.askia.com/2.1.0/ADPSchema https://raw.githubusercontent.com/AskiaADX/ADXSchema/2.1.0/ADPSchema.xsd"
-          version="2.1.0"
-          askiaCompat="5.4.2">
+          xsi:schemaLocation="http://www.askia.com/2.2.0/ADPSchema https://raw.githubusercontent.com/AskiaADX/ADXSchema/2.2.0/ADPSchema.xsd"
+          version="2.2.0"
+          askiaCompat="5.5.2">
   <info>
     <name>Chroma</name>
     <guid>bf60d191-f1af-4ea7-bb65-08cfa86d87d9</guid>
-    <version>2.0.1</version>
+    <version>3.0.0</version>
     <date>2017-02-28</date>
     <description><![CDATA[adp Chroma
 		v1.0.6 - Modified dynamic/style.css for HTML5 compatibility
@@ -16,7 +16,8 @@
              Strip HTML from longcaptions in error messages
 		v1.0.8 - Added display next property
 		v2.0.0 - Added window.location.search
-		v2.0.1 - Added indentation for long labels]]></description>
+		v2.0.1 - Added indentation for long labels
+    v3.0.0 - ADPSchema 2.2.0]]></description>
     <company>askia</company>
     <author><![CDATA[Jerome Duparc <jeromed@askia.com> Paul McDuffee Nevin<paul@askia.com>]]></author>
     <site>https://www.askia.com/</site>
