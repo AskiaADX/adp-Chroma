@@ -51,6 +51,12 @@ body, html {
 input, textarea, keygen, select, button {
     font-family: {%= FontFamily %};
 }
+svg .logotext {
+    fill: rgba({%= PrimaryColor %});   
+}
+svg .logobar {
+    fill: rgba({%= SecondaryColor %});   
+}
 header h2 {
     font-family: {%= FontFamily %};
     font-size: {%= LargeFS %};
