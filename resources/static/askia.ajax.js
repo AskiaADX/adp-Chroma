@@ -14,7 +14,7 @@
   //if (!window.arrLiveRoutingInputCode ||  window.arrLiveRoutingInputCode.length <= 0 ) {
   //  	return;
   //}
-  if (window.AskiaScript & !window.isDesignPreview) {
+  if (window.AskiaScript) {
     AskiaScript.executeLiveRouting = function () {};
   }
   // Augment or create the public `askia` namespace
@@ -167,7 +167,7 @@
     askiaShowResponses: null,
     askiaHideResponses: null,
     askiaReload: executeReload,
-    askiaSetValue: null,
+    askiaSetValue: executeSetValue,
     askiaShowMessage: null,
     askiaChangeQuestionsOrder: null,
     askiaChangeResponsesOrder: null,
@@ -253,6 +253,28 @@
     window.location.reload();
   }
 
+  /**
+   * Set value Ajax
+   */
+  function executeSetValue (data) {
+    let val = data.value;
+    if (Array.isArray(val)){
+      for (var i = 0; i < val.length; i++) {
+        let checkEl = document.querySelector('#askia-input' + data.question.inputCode + '_' + val[i].inputCode);
+        if (checkEl)
+          checkEl.checked = true;
+      }
+    } else {
+      if (typeof val === 'string'){
+        let openEl = document.querySelector('input[name="S'+ data.question.inputCode +'"]');
+        if (openEl) openEl.value = '', openEl.value = val;
+      } else {
+        let numberEl = document.querySelector('input[name="C'+ data.question.inputCode +'"]');
+        if (numberEl) numberEl.value = val;
+      }
+    }
+  }
+
   /* ---======== Live Routing Management ========--- */
 
   var isExecutingLiveRouting = false;     // Flag to avoid several live routing request
@@ -332,7 +354,7 @@
                    el.parentElement.className.indexOf('askia-grid-row') >= 0 ||
                    el.parentElement.parentElement.className.indexOf('askia-grid-row') >= 0)  &&
                   (el.type === 'radio' || el.type === 'checkbox')) || el.nodeName === 'SELECT')) {
-          askia.triggerAnswer();
+          setTimeout(function(){ askia.triggerAnswer(); }, 150);
       }
     });
     /**
@@ -359,10 +381,7 @@
         askia.triggerAnswer();
       }
     });
-    if (window.arrLiveRoutingShortcut && window.arrLiveRoutingShortcut.length >= 1) {
-        askia.triggerAnswer();
-    }
-
+    askia.triggerAnswer();
   });
 
 }());
