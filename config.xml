@@ -7,8 +7,8 @@
   <info>
     <name>Chroma</name>
     <guid>bf60d191-f1af-4ea7-bb65-08cfa86d87d9</guid>
-    <version>3.0.5</version>
-    <date>2020-12-08</date>
+    <version>3.0.6</version>
+    <date>2021-06-16</date>
     <description><![CDATA[adp Chroma
 		v1.0.6 - Modified dynamic/style.css for HTML5 compatibility
     	v1.0.7 - Modified dynamic/style.css for HTML5 compatibility.
@@ -21,6 +21,7 @@
 	v3.0.3 - Fixed live routing
 	v3.0.4 - Remove wrong value previous button
   v3.0.5 - change html.lang attribute
+  v3.0.6 - tabIndex management
   ]]></description>
     <company>askia</company>
     <author><![CDATA[Jerome Duparc <jeromed@askia.com> Paul McDuffee Nevin<paul@askia.com>]]></author>
