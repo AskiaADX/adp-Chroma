@@ -7,8 +7,8 @@
   <info>
     <name>Chroma</name>
     <guid>bf60d191-f1af-4ea7-bb65-08cfa86d87d9</guid>
-    <version>3.3.0</version>
-    <date>2022-06-23</date>
+    <version>3.4.0</version>
+    <date>2022-11-08</date>
     <description><![CDATA[Chroma Askia Design Page]]></description>
     <company>askia</company>
     <author><![CDATA[Jerome Duparc <jeromed@askia.com> Paul McDuffee Nevin<paul@askia.com>]]></author>
@@ -27,7 +27,7 @@
       <content fileName="styles.min.css" type="css" mode="static" position="head" />
       <content fileName="styles.css" type="css" mode="dynamic" position="head" />
       <content fileName="askia.ajax.min.js" type="javascript" mode="static" position="foot" />
-      <content fileName="error.asx" type="asx" mode="modules" position="none" />                  
+      <content fileName="error.asx" type="asx" mode="modules" position="none" />
     </output>
   </outputs>
   <properties>
