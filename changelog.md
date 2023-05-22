@@ -20,3 +20,4 @@ v3.3.0 - Inject error module by an asx file
        - use of logo-askia.svg file instead of inline svg
 v3.4.0 - 
 v3.4.1 - changeResponseLabel function changed
+v3.5.0 - Survey test information
