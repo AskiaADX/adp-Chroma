@@ -130,7 +130,7 @@ header h2 {
 }
 .askia-errors-summary ul {
     padding-left: 1em;
-    list-style: none;
+    /* list-style: none; */
 }
 
 input[type=checkbox][id^=askia-input], input[type=radio][id^=askia-input] {
